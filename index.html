@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap" rel="stylesheet"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>Падежи</title>
+</head>
+<body>
+
+    <section class="contentPanel">
+        <div class="gridContainer">
+            <div class="declensionForm">
+                <h2>Введите <span>существительное</span> и выберите <span>падеж</span></h2>
+                <form id="caseContainer">
+                    <div class="inputControl">
+                        <input id ="chosenWord" type="text" value="Мать">
+                    </div>
+                    <div class="selectControl">
+                        <select id ="chosenCase" name="chosenCase">
+                            <option value="1" selected>Именительный</option>
+                            <option value="2">Родительный</option>
+                            <option value="3">Дательный</option>
+                            <option value="4">Винительный</option>
+                            <option value="5">Творительный</option>
+                            <option value="6">Предложный</option>
+                          </select>
+                    </div>
+                    <input id ="submitBtn" class="caseBtn" type="submit" value="Получить результат">
+                </form>
+            </div>
+
+            <div class="caseResult" id="caseResult"></div>
+        </div>
+    </section>
+
+</body>
+</html>

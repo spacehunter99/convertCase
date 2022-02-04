@@ -1,0 +1,109 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+
+/* Content Panel */
+
+.contentPanel {
+    height: 100vh;
+    position: relative;
+    background-color: rgb(235, 235, 235);
+    background-image: url(pexels-pixabay-height.jpg);
+}
+
+.gridContainer {
+    display: grid;
+    grid-template-columns: 65% auto;
+    grid-template-rows: auto auto;
+    gap: 40px;
+    align-content: center;
+    height: 100%;
+}
+
+.declensionForm {
+    margin-left: 25%;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    grid-row: 1/ 2;
+}
+
+.declensionForm h2 {
+    padding: 20px 20px;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(245, 245, 245);
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    font-size: 20px;
+    font-family: 'Open Sans', sans-serif;
+    color: rgb(51, 51, 51);
+    font-weight: 800;
+    line-height: 1.2;
+}
+
+.declensionForm h2 span {
+    color: rgb(29,179,54);
+    margin: 0 6px;
+}
+
+.declensionForm .inputControl {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.declensionForm .inputControl input:focus { 
+    outline: none;
+}
+
+.declensionForm input[type='text'] {
+    border: 0;
+    border-bottom: 1px solid rgb(214, 214, 214);
+    width: 285px;
+    height: 31px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    text-align: center;
+    padding-top: 6px;
+    padding-left: 0px;
+    padding-bottom: 6px;
+}
+
+.declensionForm input[type='submit'] {
+    height: 54px;
+    width: 100%;
+    background-color: rgb(29,179,54);
+    border: 0;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    font-size: 18px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 500;
+    color: rgb(255, 255, 255);
+    line-height: 1.2;
+}
+
+.caseResult {
+    margin-right: 25%;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    /* border: 1px solid rgb(29,179,54); */
+    grid-row: 1;
+    font-size: 30px;
+    font-family: "Raleway";
+}
+
+.selectControl { 
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.caseResult {
+    display: flex;
+    justify-content: center;
+    padding-top: 90px;
+    font-size: 40px;
+}
